@@ -60,9 +60,9 @@ blockquote {
 	margin-bottom:2em;
 	
 	background:
-	url(/symphony/workspace/media/top2.png) no-repeat top center,
-	url(/symphony/workspace/media/bottom2.png) no-repeat bottom center,
-	url(/symphony/workspace/media/single2.png) repeat top center;
+	url(/workspace/media/top2.png) no-repeat top center,
+	url(/workspace/media/bottom2.png) no-repeat bottom center,
+	url(/workspace/media/single2.png) repeat top center;
 }
 
 #content {

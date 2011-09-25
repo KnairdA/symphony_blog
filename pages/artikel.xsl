@@ -24,12 +24,14 @@
 </div>
 
 <form id="comment_form" method="post" action="" enctype="multipart/form-data">
-	Name: <input name="fields[author]" type="text" /><br/>
-	Webseite: <input name="fields[website]" type="text" /><br/>
+	<p>
+	<label>Name: </label><input name="fields[author]" type="text" /><br/>
+	<label>Webseite: </label><input name="fields[website]" type="text" /><br/>
 	<input name="fields[article]" type="hidden" value="{articles-single/entry/title}" />
-	<textarea name="fields[comment]"></textarea><br/>
+	<textarea name="fields[comment]" rows="5" cols="100"></textarea><br/>
 	<span class="markupinfo">Direktes verwenden von HTML Tags im Text ist nicht erlaubt - es steht jedoch eine Teilmenge von Markdown zur Formatierung zu Verfügung.</span><br/>
 	<input name="action[add-comment]" type="submit" value="Kommentieren" />
+	</p>
 </form>
 
 </xsl:template>

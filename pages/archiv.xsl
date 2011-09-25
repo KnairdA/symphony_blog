@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:atom="http://www.w3.org/2005/Atom">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/date-time.xsl" />
 
-<xsl:output method="xml" doctype-public="-W3CDTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" omit-xml-declaration="yes" encoding="UTF-8" indent="yes" />
+<xsl:output method="xml" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" omit-xml-declaration="yes" encoding="UTF-8" indent="yes" />
 
 <xsl:template match="/">
     
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -57,7 +57,7 @@
 						<div>
 							<a href="https://twitter.com/#!/KnairdA">Microblog:</a>
 							<ul class="tweetlist">
-								<xsl:apply-templates select="/data/twitter//atom:entry[substring(atom:title, 1, 10) != 'KnairdA: @'][position() &lt;= 5]" />
+								<xsl:apply-templates xmlns:atom="http://www.w3.org/2005/Atom" select="/data/twitter//atom:entry[substring(atom:title, 1, 10) != 'KnairdA: @'][position() &lt;= 5]" />
 							</ul>
 						</div>
 					</div>
@@ -83,7 +83,7 @@
 	<li><a href="{$root}/artikel/{title/@handle}"><xsl:value-of select="title"/> (<xsl:value-of select="@comments"/>)</a></li>
 </xsl:template>
   
-<xsl:template match="/data/twitter//atom:entry">
+<xsl:template xmlns:atom="http://www.w3.org/2005/Atom" match="/data/twitter//atom:entry">
 	<li><em>»</em>
 		<a href="{atom:link/@href}">
 			<xsl:value-of select="substring(atom:content,9)" disable-output-escaping="yes" />

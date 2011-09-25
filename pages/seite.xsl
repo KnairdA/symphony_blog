@@ -13,7 +13,7 @@
 		<xsl:call-template name="pagination">
 			<xsl:with-param name="pagination" select="articles-page/pagination" />
 			<xsl:with-param name="display-number" select="'2'" />
-			<xsl:with-param name="pagination-url" select="'/symphony/seite/$'" />
+			<xsl:with-param name="pagination-url" select="'/seite/$'" />
 			<xsl:with-param name="label-previous" select="'&#171; neuere'" />
 			<xsl:with-param name="label-next" select="'ältere &#187;'" />
 		</xsl:call-template>
