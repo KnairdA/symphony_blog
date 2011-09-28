@@ -13,6 +13,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>adriank.redirectme.net</title>
 	<link rel="stylesheet" type="text/css" href="{$workspace}/main.css" />
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="{$workspace}/dirty.css" />
+	<![endif]-->
 </head>
 
 <body>

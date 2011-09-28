@@ -17,7 +17,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>adriank.redirectme.net</title>
 	<link rel="stylesheet" type="text/css" href="{$workspace}/main.css" />
-	
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="{$workspace}/dirty.css" />
+	<![endif]-->
 	<script type="text/javascript" src="{$workspace}/js/google-code-prettify/prettify.js"></script>
 	<link href="{$workspace}/js/google-code-prettify/obsidian.css" type="text/css" rel="stylesheet" />
 </head>
