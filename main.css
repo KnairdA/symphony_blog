@@ -364,29 +364,29 @@ blockquote {
 }
 
 .archivlist ol {
-    margin-top:0.2em;
-    border-top:0.1em solid #e3e8e8;
+	margin-top:0.2em;
+	border-top:0.1em solid #e3e8e8;
 }
 
 .archivlist ol li {
-    background:none;
-    padding-left:1em;
-    font-size:0.8em;
+	background:none;
+	padding-left:1em;
+	font-size:0.8em;
 }
 
 .archivlist ol li.dateitem {
-    padding:0;
-    font-weight:bold;
+	padding:0;
+	font-weight:bold;
 }
 
 .archivtag ul {
-    margin-top:0.2em;
-    border-top:0.1em solid #e3e8e8;
+	margin-top:0.2em;
+	border-top:0.1em solid #e3e8e8;
 }
 
 .archivtag div {
-    overflow:hidden;
-    margin-bottom:0.5em;
+	overflow:hidden;
+	margin-bottom:0.5em;
 }
 
 .tweetlist li a {
@@ -400,30 +400,49 @@ blockquote {
 }
 
 .commentlist ol {
-    margin-top:0.2em;
-    border-top:0.1em solid #e3e8e8;
+	margin-top:0.2em;
+	border-top:0.1em solid #e3e8e8;
 }
 
 .commentlist ol li {
-    background:none;
-    font-size:0.8em;
+	background:none;
+	font-size:0.8em;
 }
 
 .commentlist ol li.dateitem {
-    padding:0;
-    font-weight:bold;
+	padding:0;
+	font-weight:bold;
 }
 
 .project {
-    border-bottom:0.2em dotted #e3e8e8;
-    padding-top:0.5em;
-    padding-bottom:0.5em;
-    overflow:hidden;
+	border-bottom:0.2em dotted #e3e8e8;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	overflow:hidden;
 }
 
 .project img {
-    background:#e3e8e8;
-    border-radius:0.3em;
-    padding:0.2em;
-    margin-right:1em;
+	background:#e3e8e8;
+	border-radius:0.3em;
+	padding:0.2em;
+	margin-right:1em;
+}
+
+/* Special definitions for different clients */
+
+@media screen and (max-width: 870px) {
+	#wrapper {
+		width:100%;
+		margin:0;
+		background:none;
+	}
+	#content {
+		width:98%;
+		margin:0 auto;
+		padding:0;
+	}
+	img.full {
+		width:98%;
+		horizontal-align:middle;
+	}
 }
