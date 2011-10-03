@@ -15,12 +15,17 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Adrian Kummerländer" />
+	<meta name="description" content="Seite von Adrian Kummerländer über Linux, Open Source und anderes"/> 
+	<meta name="robots" content="all"/>
+	
 	<title>adriank.redirectme.net</title>
 	<link rel="stylesheet" type="text/css" href="{$workspace}/main.css" />
 	<xsl:comment><![CDATA[[if lte IE 8]><link rel="stylesheet" type="text/css" href="]]><xsl:value-of select="$workspace"/><![CDATA[/dirty.css" /><![endif]]]></xsl:comment>
 	
 	<script type="text/javascript" src="{$workspace}/js/google-code-prettify/prettify.js"></script>
 	<link href="{$workspace}/js/google-code-prettify/obsidian.css" type="text/css" rel="stylesheet" />
+	<link rel="shortcut icon" type="image/x-icon" href="{$root}/favicon.ico" />
 </head>
 <body onload="prettyPrint()">
 	<div id="wrapper">

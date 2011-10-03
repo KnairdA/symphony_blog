@@ -37,6 +37,7 @@
 					<xsl:text>:00 </xsl:text>
 					<xsl:value-of select="translate($timezone,':','')"/>
 				</pubDate>
+				<author>Adrian Kummerländer</author>
 				<guid><xsl:value-of select="$root"/>/artikel/<xsl:value-of select="title/@handle"/></guid>
 			</item>
 		</xsl:for-each>        
