@@ -14,6 +14,7 @@
 	<meta name="author" content="Adrian Kummerländer" />
 	<meta name="description" content="Seite von Adrian Kummerländer über Linux, Open Source und anderes"/> 
 	<meta name="robots" content="all"/>
+	<meta name="google-site-verification" content="H-CBt2da-t_5xp0y1pA9l-IrRZymCFwizuyYKj3ufeA" />
 	
 	<title>adriank.redirectme.net</title>
 	<link rel="stylesheet" type="text/css" href="{$workspace}/main.css" />

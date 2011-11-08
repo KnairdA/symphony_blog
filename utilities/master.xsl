@@ -24,8 +24,9 @@
 	<xsl:comment><![CDATA[[if lte IE 8]><link rel="stylesheet" type="text/css" href="]]><xsl:value-of select="$workspace"/><![CDATA[/dirty.css" /><![endif]]]></xsl:comment>
 	
 	<script type="text/javascript" src="{$workspace}/js/google-code-prettify/prettify.js"></script>
-	<link href="{$workspace}/js/google-code-prettify/obsidian.css" type="text/css" rel="stylesheet" />
-	<link rel="shortcut icon" type="image/x-icon" href="{$root}/favicon.ico" />
+	<!--<link href="{$workspace}/js/google-code-prettify/obsidian.css" type="text/css" rel="stylesheet" />-->
+	<link rel="shortcut icon" type="image/x-icon" href="{$root}/favicon.ico" /> 
+	<meta name="google-site-verification" content="H-CBt2da-t_5xp0y1pA9l-IrRZymCFwizuyYKj3ufeA" />
 </head>
 <body onload="prettyPrint()">
 	<div id="wrapper">
