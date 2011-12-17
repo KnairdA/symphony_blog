@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:import href="../utilities/date-time.xsl"/>
+<xsl:import href="../utilities/date-time-en.xsl"/>
 
 <xsl:output method="xml"
 	doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -30,7 +30,7 @@
 					<xsl:text>]]</xsl:text><xsl:text disable-output-escaping="yes"><![CDATA[>]]></xsl:text>
 				</description>
 				<pubDate>
-					<xsl:call-template name="format-date">
+                                        <xsl:call-template name="format-date">
 						<xsl:with-param name="date" select="date"/>
 						<xsl:with-param name="format" select="'w, d m Y T'"/>
 					</xsl:call-template>
