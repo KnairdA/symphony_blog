@@ -43,6 +43,7 @@ blockquote{border-left:0.4em solid #e3e8e8; margin-left:0; padding-left:1em}
 #comment_form input{border:0.3em solid #e3e8e8; margin:0.3em 0 0.3em 0}
 #comment_form textarea{border:0.3em solid #e3e8e8; width:100%; height:10em}
 #comment_form .markupinfo{font-size:0.7em}
+#comment_form .hidden{display:none;}
 #pagination{height:1.5em; margin-top:0.5em}
 #pagination span.disabled{display:none}
 #pagination span a{text-decoration:none; color:#272828}
@@ -82,4 +83,4 @@ blockquote{border-left:0.4em solid #e3e8e8; margin-left:0; padding-left:1em}
 #content{width:98%; margin:0 auto; padding:0}
 img.full{width:98%; horizontal-align:middle}
 }
-.kwd{color:#93C763}.com{color:#66747B}.typ{color:#678CB1}.lit{color:#FACD22}.tag{color:#8AC763}.atn{color:#E0E2E4}.dec{color:purple}pre.prettyprint{background-color:#000;border-radius:8px;width:95%;white-space:pre-wrap;color:#FFF;font-size:.9em;margin:1em auto;padding:1em}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{color:#555}li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}.str,.atv{color:#EC7600}.pun,.pln{color:#F1F2F3}@media print{.com{color:#600;font-style:italic}.typ{color:#404;font-weight:700}.lit{color:#044}.pun{color:#440}.atn{color:#404}pre.prettyprint,.pln{color:#000}.str,.atv{color:#060}.kwd,.tag{color:#006;font-weight:700}}
+.kwd{color:#93C763}.com{color:#66747B}.typ{color:#678CB1}.lit{color:#FACD22}.tag{color:#8AC763}.atn{color:#E0E2E4}.dec{color:purple}pre.prettyprint{background-color:#222;border-radius:8px;width:95%;white-space:pre-wrap;color:#FFF;font-size:.9em;margin:1em auto;padding:1em}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{color:#555}li.L1,li.L3,li.L5,li.L7,li.L9{background:#222}.str,.atv{color:#EC7600}.pun,.pln{color:#F1F2F3}@media print{.com{color:#600;font-style:italic}.typ{color:#404;font-weight:700}.lit{color:#044}.pun{color:#440}.atn{color:#404}pre.prettyprint,.pln{color:#000}.str,.atv{color:#060}.kwd,.tag{color:#006;font-weight:700}}

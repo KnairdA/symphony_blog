@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" 
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:math="http://exslt.org/math"
+		extension-element-prefixes="math">
 
 <xsl:include href="../utilities/master.xsl"/>
 <xsl:include href="../utilities/date-time.xsl"/>
 <xsl:include href="../utilities/ninja.xsl" />
 <xsl:include href="../utilities/clean-comment-markup.xsl"/>
+
+<xsl:param name="num1" select="floor(math:random()*10) + 1"/>
+<xsl:param name="num2" select="floor(math:random()*10) + 1"/>
 
 <xsl:template match="data">
 
@@ -23,14 +29,22 @@
 	<h3><a name="kommentieren">Frage, Anmerkung oder Kritik?</a></h3>
 </div>
 
-<form id="comment_form" method="post" action="" enctype="multipart/form-data">
+<form id="comment_form" method="post" action="#kommentieren" enctype="multipart/form-data">
 	<p>
-	<label>Name: </label><input name="fields[author]" type="text" /><br/>
-	<label>Webseite: </label><input name="fields[website]" type="text" /><br/>
-	<input name="fields[article]" type="hidden" value="{articles-single/entry/title}" />
-	<textarea name="fields[comment]" rows="5" cols="100"></textarea><br/>
-	<span class="markupinfo">Direktes verwenden von HTML Tags im Text ist nicht erlaubt - es steht jedoch eine Teilmenge von Markdown zur Formatierung zu Verfügung.</span><br/>
-	<input name="action[add-comment]" type="submit" value="Kommentieren" />
+		<label>Name: </label><input name="fields[author]" type="text" /><br/>
+		<label>Webseite: </label><input name="fields[website]" type="text" /><br/>
+		<xsl:value-of select="$num1"/> + <xsl:value-of select="$num2"/> = <input name="fields[number]" type="text"/>
+
+		<input name="fields[article]" type="hidden" value="{articles-single/entry/title}" />
+		<textarea name="fields[comment]" rows="5" cols="100"></textarea><br/>
+		<span class="markupinfo">Direktes verwenden von HTML Tags im Text ist nicht erlaubt - es steht jedoch eine Teilmenge von Markdown zur Formatierung zu Verfügung.</span><br/>
+		<input name="action[add-comment]" type="submit" value="Kommentieren" />
+		<xsl:if test="events/add-comment/@result = 'error'">
+		<br/><strong>Fehler:</strong> Bitte fülle alle Felder aus.
+		</xsl:if>
+
+		<input name="fields[check1]" type="text" value="{$num1}" class="hidden" />
+		<input name="fields[check2]" type="text" value="{$num2}" class="hidden" />
 	</p>
 </form>
 

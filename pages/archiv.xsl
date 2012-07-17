@@ -64,7 +64,7 @@
 						<div>
 							<a href="https://twitter.com/#!/KnairdA">Microblog:</a>
 							<ul class="tweetlist">
-								<xsl:apply-templates xmlns:atom="http://www.w3.org/2005/Atom" select="/data/twitter//atom:entry[substring(atom:title, 1, 10) != 'KnairdA: @'][position() &lt;= 5]" />
+								<xsl:apply-templates xmlns:atom="http://www.w3.org/2005/Atom" select="/data/twitter//atom:entry[substring(atom:title, 1, 10) != 'KnairdA: @'][position() &lt;= 7]" />
 							</ul>
 						</div>
 					</div>
