@@ -42,6 +42,9 @@
 		<xsl:if test="events/add-comment/@result = 'error'">
 		<br/><strong>Fehler:</strong> Bitte fülle alle Felder aus.
 		</xsl:if>
+		<xsl:if test="events/add-comment/@result = 'success'">
+		<br/><strong>Hinweis:</strong> Vielen Dank für Deinen Kommentar, er wurde erfolgreich gespeichert. Ich werde ihn so schnell wie möglich freischalten. 
+		</xsl:if>
 
 		<input name="fields[check1]" type="text" value="{$num1}" class="hidden" />
 		<input name="fields[check2]" type="text" value="{$num2}" class="hidden" />
