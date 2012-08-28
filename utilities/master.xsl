@@ -36,7 +36,7 @@
 				<ul>
 					<li><a href="{$root}">Start</a></li>
 					<li><a href="{$root}/archiv">Archiv</a></li>
-					<li><a href="{$root}/seiten/projekte">Projekte</a></li>
+					<li><a href="{$root}/projekte">Projekte</a></li>
 					<li><a href="{$root}/seiten/kontakt">Kontakt</a></li>
 					<li class="last_item"><a href="{$root}/rss">RSS</a></li>
 				</ul>
