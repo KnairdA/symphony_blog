@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" 
-		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		xmlns:math="http://exslt.org/math"
-		extension-element-prefixes="math">
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:include href="../utilities/master.xsl"/>
 <xsl:include href="../utilities/date-time.xsl"/>
 <xsl:include href="../utilities/ninja.xsl" />
 <xsl:include href="../utilities/clean-comment-markup.xsl"/>
-
-<xsl:param name="num1" select="floor(math:random()*10) + 1"/>
-<xsl:param name="num2" select="floor(math:random()*10) + 1"/>
 
 <xsl:template match="data">
 
@@ -33,7 +28,7 @@
 	<p>
 		<label>Name: </label><input name="fields[author]" type="text" /><br/>
 		<label>Webseite: </label><input name="fields[website]" type="text" /><br/>
-		<xsl:value-of select="$num1"/> + <xsl:value-of select="$num2"/> = <input name="fields[number]" type="text"/>
+		<xsl:value-of select="events/spamquestion/part1"/> + <xsl:value-of select="events/spamquestion/part2"/> = <input name="fields[number]" type="text"/>
 
 		<input name="fields[article]" type="hidden" value="{articles-single/entry/title}" />
 		<textarea name="fields[comment]" rows="5" cols="100"></textarea><br/>
@@ -46,8 +41,9 @@
 		<br/><strong>Hinweis:</strong> Vielen Dank für Deinen Kommentar, er wurde erfolgreich gespeichert. Ich werde ihn so schnell wie möglich freischalten. 
 		</xsl:if>
 
-		<input name="fields[check1]" type="text" value="{$num1}" class="hidden" />
-		<input name="fields[check2]" type="text" value="{$num2}" class="hidden" />
+		<input name="fields[check1]" type="hidden" value="{events/spamquestion/honey1}" />
+                <input name="fields[check2]" type="hidden" value="{events/spamquestion/honey2}" />
+                <input name="fields[spam]" type="hidden" value="{events/spamquestion/check}" />
 	</p>
 </form>
 
