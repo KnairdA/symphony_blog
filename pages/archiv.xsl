@@ -64,7 +64,7 @@
 						<div>
 							<a href="https://twitter.com/#!/KnairdA">Microblog:</a>
 							<ul class="tweetlist">
-								<xsl:apply-templates xmlns:atom="http://www.w3.org/2005/Atom" select="/data/twitter//atom:entry[substring(atom:title, 1, 10) != 'KnairdA: @'][position() &lt;= 7]" />
+								<xsl:apply-templates select="/data/twitter/tweets/item[substring(text, 1, 1) != '@'][position() &lt;= 7]" />
 							</ul>
 						</div>
 					</div>
@@ -90,10 +90,10 @@
 	<li><a href="{$root}/artikel/{title/@handle}"><xsl:value-of select="title"/> (<xsl:value-of select="@comments"/>)</a></li>
 </xsl:template>
   
-<xsl:template xmlns:atom="http://www.w3.org/2005/Atom" match="/data/twitter//atom:entry">
+<xsl:template match="/data/twitter/tweets/item">
 	<li><em>»</em>
-		<a href="{atom:link/@href}">
-			<xsl:value-of select="substring(atom:content,9)" disable-output-escaping="yes" />
+		<a href="{link}">
+			<xsl:value-of select="text" disable-output-escaping="yes" />
 		</a>
 	</li>
 </xsl:template>
