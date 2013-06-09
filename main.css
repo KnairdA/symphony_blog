@@ -1,5 +1,5 @@
 body{margin:0; padding:0; font:1em Droid Sans,sans-serif,Verdana,Arial,FreeSans; color:#272828; word-wrap:break-word}
-p{margin:0}
+p{margin:0;line-height:1.5em}
 ul{margin:0; padding:0.4em 0; list-style:none; float:right}
 ul li{float:left; padding:0 0.2em}
 ul li.last_item{padding-right:0}
@@ -23,7 +23,7 @@ blockquote{border-left:0.4em solid #e3e8e8; margin-left:0; padding-left:1em}
 #main .article p{margin-bottom:0.7em}
 #main .article a{text-decoration:underline; color:#272828}
 #main .article a:hover{color:black}
-#main .article ul{float:none; margin-left:2em}
+#main .article ul{float:none; margin-left:2em; text-align:left;}
 #main .article ul li{list-style-type:circle; float:none}
 #main .article ul li a{background:none}
 #main .article .info{font-size:0.8em; margin-bottom:0.5em; margin-left:1.5em}
@@ -78,9 +78,9 @@ blockquote{border-left:0.4em solid #e3e8e8; margin-left:0; padding-left:1em}
 .commentlist ol li{background:none; font-size:0.8em}
 .commentlist ol li.dateitem{padding:0; font-weight:bold}
 .project{border-bottom:0.2em dotted #e3e8e8; padding-top:0.5em; padding-bottom:0.5em; overflow:hidden}
-.project img{background:#e3e8e8; border-radius:0.3em; padding:0.2em; margin-right:1em}
+.project img{background:#e3e8e8; border-radius:0.3em; padding:0.2em; margin-right:1em; width:200px; height:150px}
 @media screen and (max-width:870px){#wrapper{width:100%; margin:0; background:none}
 #content{width:98%; margin:0 auto; padding:0}
-img.full{width:98%; horizontal-align:middle}
+img.full{width:98%}
 }
 .kwd{color:#93C763}.com{color:#66747B}.typ{color:#678CB1}.lit{color:#FACD22}.tag{color:#8AC763}.atn{color:#E0E2E4}.dec{color:purple}pre.prettyprint{background-color:#222;border-radius:8px;width:95%;white-space:pre-wrap;color:#FFF;font-size:.9em;margin:1em auto;padding:1em}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{color:#555}li.L1,li.L3,li.L5,li.L7,li.L9{background:#222}.str,.atv{color:#EC7600}.pun,.pln{color:#F1F2F3}@media print{.com{color:#600;font-style:italic}.typ{color:#404;font-weight:700}.lit{color:#044}.pun{color:#440}.atn{color:#404}pre.prettyprint,.pln{color:#000}.str,.atv{color:#060}.kwd,.tag{color:#006;font-weight:700}}

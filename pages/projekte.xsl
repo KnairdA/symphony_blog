@@ -13,14 +13,14 @@
 	<xsl:choose>
 		<xsl:when test="position()!= last()">
 			<div class="article project"> 
-				<p><img class="lpos" src="{$workspace}{./image/@path}/{./image/filename}" style="width:200px; height:150px;" alt=""/></p>
+				<p class="lpos"><img src="{$workspace}{./image/@path}/{./image/filename}" alt=""/></p>
 				<h2><xsl:text disable-output-escaping="yes"><![CDATA[&raquo;&nbsp;]]></xsl:text> <a href="{./link}"><xsl:value-of select="./name"/></a></h2>
 				<xsl:copy-of select="content/node()"/>
 			</div>
 		</xsl:when>
 		<xsl:otherwise>
 			<div class="last article project"> 
-				<p><img class="lpos" src="{$workspace}{./image/@path}/{./image/filename}" style="width:200px; height:150px;" alt=""/></p>
+				<p class="lpos"><img src="{$workspace}{./image/@path}/{./image/filename}" alt=""/></p>
 				<h2><xsl:text disable-output-escaping="yes"><![CDATA[&raquo;&nbsp;]]></xsl:text> <a href="{./link}"><xsl:value-of select="./name"/></a></h2>
 				<xsl:copy-of select="content/node()"/>
 			</div>

@@ -16,7 +16,7 @@
 	<meta name="robots" content="all"/>
 	<meta name="google-site-verification" content="H-CBt2da-t_5xp0y1pA9l-IrRZymCFwizuyYKj3ufeA" />
 	
-	<title>adriank.redirectme.net</title>
+	<title>/home/adrian</title>
 	<link rel="stylesheet" type="text/css" href="{$workspace}/main.css" />
 	<xsl:comment><![CDATA[[if lte IE 8]><link rel="stylesheet" type="text/css" href="]]><xsl:value-of select="$workspace"/><![CDATA[/dirty.css" /><![endif]]]></xsl:comment>
 	<link rel="shortcut icon" type="image/x-icon" href="{$root}/favicon.ico" />
@@ -31,7 +31,7 @@
 				<ul>
 					<li><a href="{$root}">Start</a></li>
 					<li><a href="{$root}/archiv">Archiv</a></li>
-					<li><a href="{$root}/seiten/projekte">Projekte</a></li>
+					<li><a href="{$root}/projekte">Projekte</a></li>
 					<li><a href="{$root}/seiten/kontakt">Kontakt</a></li>
 					<li class="last_item"><a href="{$root}/rss">RSS</a></li>
 				</ul>
