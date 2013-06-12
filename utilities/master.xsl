@@ -65,7 +65,7 @@
 			</div>
 			
 			<div id="last_line">
-				<a href="http://symphony-cms.com/">Gemacht mit Symphony</a>
+				<a href="http://www.getsymphony.com/">Gemacht mit Symphony</a>
 				<ul>
 					<li><a href="{$root}/seiten/kontakt">Kontakt</a></li>
 					<li class="last_item"><a href="{$root}/rss">RSS</a></li>
