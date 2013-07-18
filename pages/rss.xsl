@@ -17,7 +17,7 @@
 	<channel>
 		<title>/home/adrian</title>
 		<link><xsl:value-of select="$root"/></link>
-		<description>Artikel von AdrianK.redirectme.net</description>
+		<description>Artikel von blog.kummerlaender.eu</description>
 		<generator>Symphony CMS</generator>
 
 		<xsl:for-each select="data/articles-feed/entry">

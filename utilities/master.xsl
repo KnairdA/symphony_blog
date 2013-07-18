@@ -59,7 +59,7 @@
 				<div class="right taglist">
 					Schlagwörter:
 					<xsl:call-template name="tag-cloud">
-						<xsl:with-param name="tags" select="data/section-schema[@handle='articles']/*[name()='tags']//option"/>
+						<xsl:with-param name="tags" select="data/articlesschema/*[name()='tags']//option"/>
 					</xsl:call-template>
 				</div>
 			</div>
