@@ -6,7 +6,7 @@
 
 <xsl:template match="data">
 	<div class="archiv left articlelist archivlist">   
-		Alle mit &#187;<xsl:value-of select="params/tag_name"/>&#171; ausgezeichneten Artikel:
+		Alle mit &#187;<xsl:value-of select="params/tag-name"/>&#171; ausgezeichneten Artikel:
 		<ol>
 			<xsl:apply-templates select="articles-tag/entry"/>
 		</ol>

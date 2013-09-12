@@ -83,7 +83,7 @@
 	<ul>
 		<xsl:for-each select="$tags">
 			<li>
-				<a href="{$root}/tag/{@handle}">
+				<a href="{$root}/tag/{.}">
 					<xsl:value-of select="." />
 				</a>
 			</li>
