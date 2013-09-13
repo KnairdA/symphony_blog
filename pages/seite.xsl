@@ -41,7 +41,7 @@
 		<xsl:call-template name="format-date">
 			<xsl:with-param name="date" select="date"/>
 			<xsl:with-param name="format" select="'x. M Y'"/>
-		</xsl:call-template> | <xsl:for-each select="tags/item"><a href="{$root}/tag/{@handle}"><xsl:value-of select="." /></a>&#160; </xsl:for-each> | <xsl:value-of select="author"/>
+		</xsl:call-template> | <xsl:for-each select="tags/item"><a href="{$root}/tag/{.}"><xsl:value-of select="." /></a>&#160; </xsl:for-each> | <xsl:value-of select="author"/>
 		<!--<xsl:choose><xsl:when test="@comments &gt; 0">| Kommentare: <xsl:value-of select="@comments"/></xsl:when></xsl:choose>-->
 	</p>
 	<xsl:copy-of select="content/node()"/>
