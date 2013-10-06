@@ -29,6 +29,12 @@ blockquote{border-left:0.4em solid #e3e8e8; margin-left:0; padding-left:1em}
 #main .article .info{font-size:0.8em; margin-bottom:0.5em; margin-left:1.5em}
 #main .article .info a{text-decoration:none; color:#272828}
 #main .article .info a:hover{text-decoration:underline}
+#main .article table {border-collapse:collapse;border-left:0.4em solid #e3e8e8}
+#main .article table thead {border-bottom:0.1em solid #272828}
+#main .article table tr {border-bottom:0.1em solid #272828}
+#main .article table tr:last-child {border-bottom:none}
+#main .article table tr th{font-weight:normal;padding:0.2em 1em}
+#main .article table tr td{padding:0.2em 1em}
 #main a img{padding:0.2em; border:0.1em solid #e3e8e8; display:block;  margin-left:auto;  margin-right:auto}
 #main a img.clear{border:none}
 #main .comments{margin-top:0.5em; font-size:0.95em}
