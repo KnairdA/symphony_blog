@@ -66,7 +66,7 @@ blockquote{border-left:0.4em solid #e3e8e8; margin-left:0; padding-left:1em}
 .archiv a{color:#272828; text-decoration:none}
 .archiv a:hover{text-decoration:underline}
 .archiv .left{ float:left}
-.archiv .right{overflow:hidden; min-width:280px}
+.archiv .right{overflow:hidden; min-width:240px}
 .taglist ul{margin-top:0.2em; padding:0.3em;  float:none}
 .taglist ul li{margin:0.2em 0 0.2em 0; margin-top:0; padding:0.2em}
 .articlelist ol{margin:0; padding:0.3em;  list-style:none}

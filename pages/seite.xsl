@@ -5,6 +5,8 @@
 <xsl:include href="../utilities/date-time.xsl"/>
 <xsl:include href="../utilities/pagination.xsl"/>
 
+<xsl:template name="title-text">/home/adrian</xsl:template>
+
 <xsl:template match="data">
 
 	<xsl:apply-templates select="articles-page/entry"/>

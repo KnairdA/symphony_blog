@@ -19,7 +19,7 @@
 	<meta name="description" content="Seite von Adrian Kummerländer über Linux, Open Source und anderes"/> 
 	<meta name="robots" content="all"/>
 	
-	<title>/home/adrian</title>
+	<title><xsl:call-template name="title-text"/></title>
 	<link rel="stylesheet" type="text/css" href="{$workspace}/main.css" />
 	<xsl:comment><![CDATA[[if lte IE 8]><link rel="stylesheet" type="text/css" href="]]><xsl:value-of select="$workspace"/><![CDATA[/dirty.css" /><![endif]]]></xsl:comment>
 	

@@ -3,6 +3,8 @@
 
 <xsl:include href="../utilities/master.xsl"/>
 
+<xsl:template name="title-text">/home/adrian</xsl:template>
+
 <xsl:template match="data">
 
 	<xsl:apply-templates select="projects-all/entry"/>

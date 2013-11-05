@@ -4,6 +4,8 @@
 <xsl:include href="../utilities/master.xsl"/>
 <xsl:include href="../utilities/date-time.xsl"/>
 
+<xsl:template name="title-text">/home/adrian</xsl:template>
+
 <xsl:template match="data">
 	<div class="archiv left articlelist archivlist">   
 		Alle mit &#187;<xsl:value-of select="params/tag-name"/>&#171; ausgezeichneten Artikel:

@@ -7,6 +7,8 @@
 <xsl:include href="../utilities/ninja.xsl" />
 <xsl:include href="../utilities/clean-comment-markup.xsl"/>
 
+<xsl:template name="title-text"><xsl:value-of select="data/articles-single/entry/title"/> @ /home/adrian</xsl:template>
+
 <xsl:template match="data">
 
 <xsl:apply-templates select="articles-single/entry"/>

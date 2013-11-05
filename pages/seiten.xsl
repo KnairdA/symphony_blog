@@ -4,6 +4,8 @@
 <xsl:include href="../utilities/master.xsl"/>
 <xsl:include href="../utilities/date-time.xsl"/>
 
+<xsl:template name="title-text">/home/adrian</xsl:template>
+
 <xsl:template match="data">
 
 <xsl:apply-templates select="page/entry"/>
