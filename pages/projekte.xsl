@@ -9,25 +9,18 @@
 
 	<xsl:apply-templates select="projects-all/entry"/>
 
+	<div class="last article project"> 
+		...alle Quellen und ein paar andere Sachen befinden sich auf <a href="https://github.com/KnairdA/">Github</a> und <a href="http://code.kummerlaender.eu">cgit</a>
+	</div>
+
 </xsl:template>
 
 <xsl:template match="projects-all/entry">
-	<xsl:choose>
-		<xsl:when test="position()!= last()">
-			<div class="article project"> 
-				<p class="lpos"><img src="{$workspace}{./image/@path}/{./image/filename}" alt=""/></p>
-				<h2><xsl:text disable-output-escaping="yes"><![CDATA[&raquo;&nbsp;]]></xsl:text> <a href="{./link}"><xsl:value-of select="./name"/></a></h2>
-				<xsl:copy-of select="content/node()"/>
-			</div>
-		</xsl:when>
-		<xsl:otherwise>
-			<div class="last article project"> 
-				<p class="lpos"><img src="{$workspace}{./image/@path}/{./image/filename}" alt=""/></p>
-				<h2><xsl:text disable-output-escaping="yes"><![CDATA[&raquo;&nbsp;]]></xsl:text> <a href="{./link}"><xsl:value-of select="./name"/></a></h2>
-				<xsl:copy-of select="content/node()"/>
-			</div>
-		</xsl:otherwise>
-	</xsl:choose>
+	<div class="article project"> 
+		<p class="lpos"><img src="{$workspace}{./image/@path}/{./image/filename}" alt=""/></p>
+		<h2><xsl:text disable-output-escaping="yes"><![CDATA[&raquo;&nbsp;]]></xsl:text> <a href="{./link}"><xsl:value-of select="./name"/></a></h2>
+		<xsl:copy-of select="content/node()"/>
+	</div>
 </xsl:template>
 
 </xsl:stylesheet>
