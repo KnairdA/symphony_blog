@@ -1,4 +1,4 @@
-body{margin:0; padding:0; font:1em Droid Sans,sans-serif,Verdana,Arial,FreeSans; color:#272828; word-wrap:break-word}
+body{margin:0; padding:0; font:1em Droid Sans,Helvetica,Arial,sans-serif; color:#272828; word-wrap:break-word}
 p{margin:0;line-height:1.5em}
 ul{margin:0; padding:0.4em 0; list-style:none; float:right}
 ul li{float:left; padding:0 0.2em}
@@ -9,15 +9,25 @@ blockquote{border-left:0.4em solid #e3e8e8; margin-left:0; padding-left:1em}
 .lpos{float:left}
 .rpos{float:right}
 .mpos{margin:0 auto; display:block}
-#wrapper{width:870px; margin:2em auto; background:url(/workspace/media/top2.png) no-repeat top center,url(/workspace/media/bottom2.png) no-repeat bottom center,url(/workspace/media/single2.png) repeat top center}
-#content{width:720px; margin:0 auto; padding-top:70px; padding-bottom:70px}
+#wrapper{
+	max-width:85%;
+	margin:2em auto;
+	background:
+		url(media/top_left.png) no-repeat top left,
+		url(media/top_right.png) no-repeat top right,
+		url(media/bottom_left.png) no-repeat bottom left,
+		url(media/bottom_right.png) no-repeat bottom right,
+		url(media/middle_left.png) repeat-y top left,
+		url(media/middle_right.png) repeat-y top right
+}
+#content{width:85%; margin:0 auto; padding-top:7%; padding-bottom:7%}
 #nav_wrap{overflow:hidden; border-bottom:0.3em solid #e3e8e8; padding-bottom:0.1em}
 #nav_wrap h1{color:#F80; font-size:1.2em; font-weight:normal; float:left; padding:0.2em; padding-left:0; margin:0}
 #main{margin-top:1em; margin-bottom:0.5em}
 #main .article{border-bottom:0.3em dotted #e3e8e8; padding-bottom:0.5em;  margin-top:1em; text-align:justify}
 #main .last{border:0}
 #main .article h2{font-size:1.4em; margin:0; color:#F80}
-#main .article h2 a{font-size:0.8em; text-decoration:none; color:#272828; font-weight:normal}
+#main .article h2 a{font-size:0.8em; text-decoration:none; color:#272828; font-weight:normal; display:inline-block; vertical-align:middle; max-width:96%}
 #main .article h2 a:hover{text-decoration:underline}
 #main .article h3{font-size:1.05em; font-weight:normal; margin-bottom:0.5em; border-bottom:0.1em solid #e3e8e8}
 #main .article p{margin-bottom:0.7em}
