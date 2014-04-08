@@ -17,7 +17,7 @@ blockquote{border-left:0.4em solid #e3e8e8; margin-left:0; padding-left:1em}
 #main .article{border-bottom:0.3em dotted #e3e8e8; padding-bottom:0.5em;  margin-top:1em; text-align:justify}
 #main .last{border:0}
 #main .article h2{font-size:1.4em; margin:0; color:#F80}
-#main .article h2 a{font-size:0.8em; text-decoration:none; color:#272828; font-weight:normal; display:inline-block; vertical-align:middle; max-width:96%}
+#main .article h2 a{font-size:0.8em; text-decoration:none; color:#272828; font-weight:normal; display:inline-block; vertical-align:middle; max-width:95%}
 #main .article h2 a:hover{text-decoration:underline}
 #main .article h3{font-size:1.05em; font-weight:normal; margin-bottom:0.5em; border-bottom:0.1em solid #e3e8e8}
 #main .article p{margin-bottom:0.7em}
@@ -86,8 +86,10 @@ blockquote{border-left:0.4em solid #e3e8e8; margin-left:0; padding-left:1em}
 .commentlist ol li.dateitem{padding:0; font-weight:bold}
 .project{border-bottom:0.2em dotted #e3e8e8; padding-top:0.5em; padding-bottom:0.5em; overflow:hidden}
 .project img{background:#e3e8e8; border-radius:0.3em; padding:0.2em; margin-right:1em; width:200px; height:150px}
-@media screen and (max-width:870px){#wrapper{width:100%; margin:0; background:none}
+@media screen and (max-width:870px){
+#wrapper{width:100%; margin:0; background:none}
 #content{width:98%; margin:0 auto; padding:0}
 img.full{width:98%}
+#main .article h2 a{max-width:90%}
 }
 .kwd{color:#93C763}.com{color:#66747B}.typ{color:#678CB1}.lit{color:#FACD22}.tag{color:#8AC763}.atn{color:#E0E2E4}.dec{color:purple}pre.prettyprint{background-color:#222;border-radius:8px;width:95%;white-space:pre-wrap;color:#FFF;font-size:.9em;margin:1em auto;padding:1em}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{color:#555}li.L1,li.L3,li.L5,li.L7,li.L9{background:#222}.str,.atv{color:#EC7600}.pun,.pln{color:#F1F2F3}@media print{.com{color:#600;font-style:italic}.typ{color:#404;font-weight:700}.lit{color:#044}.pun{color:#440}.atn{color:#404}pre.prettyprint,.pln{color:#000}.str,.atv{color:#060}.kwd,.tag{color:#006;font-weight:700}}
